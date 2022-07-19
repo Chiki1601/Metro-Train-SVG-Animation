@@ -1,0 +1,226 @@
+.wrapper {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10%;
+  background: #1E8BC3;
+  border: 10px solid white;
+  box-shadow: 0 0 20px gray;
+  overflow: hidden;
+  z-index: -1;
+}
+.wrapper .fuji {
+  border-bottom: 100px solid #67809F;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  height: 0;
+  width: 102px;
+  position: absolute;
+  right: 20px;
+  top: 150px;
+}
+.wrapper .fuji:before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 0px;
+  border-bottom: 60px solid #ECECEC;
+  border-left: 29px solid transparent;
+  border-right: 29px solid transparent;
+  height: 0;
+  width: 46px;
+}
+.wrapper .hill1 {
+  width: 200px;
+  height: 300px;
+  border-radius: 50%;
+  background: #3FC380;
+  position: absolute;
+  left: -110px;
+  bottom: -150px;
+  z-index: 3;
+}
+.wrapper .hill2 {
+  width: 100px;
+  height: 200px;
+  border-radius: 50%;
+  background: #019875;
+  position: absolute;
+  left: 70px;
+  top: 200px;
+  z-index: 2;
+}
+.wrapper .hill2:after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 60px;
+  top: 50px;
+  left: -50px;
+  background: #4DAF7C;
+}
+.wrapper .b1 {
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  background: #22313F;
+  right: 0px;
+  top: 170px;
+  border-radius: 3px;
+}
+.wrapper .b1:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 70px;
+  background: #22313F;
+  left: -20px;
+  top: 30px;
+  border-radius: 3px;
+}
+.wrapper .b1:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 100px;
+  background: #22313F;
+  left: -40px;
+  top: 10px;
+  border-radius: 3px;
+}
+.wrapper .b2 {
+  width: 40px;
+  height: 140px;
+  position: absolute;
+  background: #95A5A6;
+  right: 0px;
+  top: 160px;
+  z-index: 6;
+  border-radius: 3px;
+}
+.wrapper .b2:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 150px;
+  background: #95A5A6;
+  left: -70px;
+  top: 30px;
+  z-index: 6;
+  border-radius: 3px;
+}
+.wrapper .b2:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 100px;
+  background: #95A5A6;
+  left: -34px;
+  top: 50px;
+  z-index: 6;
+  border-radius: 3px;
+}
+.wrapper .track {
+  height: 60px;
+  width: 150px;
+  background: #2C3E50;
+  position: absolute;
+  right: 0px;
+  bottom: -10px;
+  transform: skew(-50deg);
+  z-index: 2;
+}
+.wrapper .track:before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 6px;
+  background: #ABB7B7;
+  position: absolute;
+  bottom: 20px;
+  left: -300px;
+  z-index: 2;
+}
+.wrapper .shin {
+  width: 50px;
+  height: 20px;
+  background: #ECF0F1;
+  position: absolute;
+  top: 266px;
+  left: 500px;
+  z-index: 2;
+  border-top-left-radius: 80%;
+  border-bottom-left-radius: 20%;
+  overflow: hidden;
+  box-shadow: 2px 0 0 #2C3E50, 23px 0 0 #ECF0F1;
+  -webkit-animation: shin1Move 7s linear infinite alternate;
+          animation: shin1Move 7s linear infinite alternate;
+}
+.wrapper .shin:before {
+  content: "";
+  position: absolute;
+  background: #22313F;
+  width: 25px;
+  height: 10px;
+  left: 15px;
+  border-radius: 3px;
+}
+.wrapper .shin2 {
+  width: 50px;
+  height: 20px;
+  background: #ECF0F1;
+  position: absolute;
+  top: 266px;
+  left: 590px;
+  z-index: 2;
+  border-top-right-radius: 80%;
+  border-bottom-right-radius: 20%;
+  overflow: hidden;
+  box-shadow: -2px 0 0 #2C3E50, -23px 0 0 #ECF0F1;
+  -webkit-animation: shin2Move 7s linear infinite alternate;
+          animation: shin2Move 7s linear infinite alternate;
+}
+.wrapper .shin2:before {
+  content: "";
+  position: absolute;
+  background: #22313F;
+  width: 25px;
+  height: 10px;
+  right: 15px;
+  border-radius: 3px;
+}
+
+@-webkit-keyframes shin1Move {
+  0% {
+    left: 500px;
+  }
+  100% {
+    left: -400px;
+  }
+}
+
+@keyframes shin1Move {
+  0% {
+    left: 500px;
+  }
+  100% {
+    left: -400px;
+  }
+}
+@-webkit-keyframes shin2Move {
+  0% {
+    left: 590px;
+  }
+  100% {
+    left: -310px;
+  }
+}
+@keyframes shin2Move {
+  0% {
+    left: 590px;
+  }
+  100% {
+    left: -310px;
+  }
+}
